@@ -1,0 +1,14 @@
+<h1>Sign Up Now!</h2>
+<form method="post" action="/users/signup">
+  <div>
+    <label for="username"> Username:
+      <input name="username" id="username" value='<%= @attempted_name || "" %>'/>
+    </label>
+  </div>
+  <div>
+    <label for="password"> Password:
+      <input type="password" id="password" name="password" />
+    </label>
+  </div>
+  <button type="submit">Sign Up</button>
+</form>
